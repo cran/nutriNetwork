@@ -6,7 +6,7 @@
 
 model.selection = function( result, criterion, lower.upper, ebic.gamma = 0.5,  ncores = 1, loglik_Y=TRUE, verbose = TRUE)
 {
-  if(class(result) == "nutriNetwork") 
+  if(inherits(result,  "nutriNetwork"))
   {
     p	 = ncol(result$path[[1]])
     nrho = length(result$rho)
@@ -99,6 +99,7 @@ selectnet = function(nutriNetwork.obj, opt.index = NULL, criteria = NULL, ebic.g
 	sel$par.cor <- Matrix(par.cor)
 	
 	rm(par.cor, theta, nutriNetwork.obj)
+	
 	class(sel) = "select"
 	return(sel)
 }
@@ -117,7 +118,8 @@ readkey <- function()
 plot.select = function(x, vis= NULL, xlab= NULL, ylab= NULL, n.mem = NULL, vertex.label = FALSE, ..., layout = NULL, label.vertex = "all", vertex.size = NULL, vertex.color = NULL , edge.color = "gray29", sel.nod.label = NULL, label.size = NULL, w.btw= 800, w.within = 10,
                   sign.edg= TRUE, edge.width= NULL, edge.label= NULL,  max.degree= NULL, layout.tree= NULL, root.node= NULL, degree.node= NULL, curve= FALSE, pos.legend= "bottomleft", cex.legend= 0.8, iterl = NULL, temp = NULL, tk.width = NULL, tk.height= NULL)
 {
-	if(class(x) != "select") stop("The input of this plot function should be from \"select\" class (More info in: selectnet( ) ). \n")
+	#if(class(x) != "select") stop("The input of this plot function should be from \"select\" class (More info in: selectnet( ) ). \n")
+  if( ! inherits(x, "select")) stop("The input of this plot function should be from \"select\" class (More info in: selectnet( ) ). \n")
 	if(is.null(vis)) vis <-  "CI"
 	if(is.null(xlab)) xlab <- "variables"
 	if(is.null(ylab)) ylab <- "variables"

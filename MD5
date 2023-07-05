@@ -1,10 +1,10 @@
-59b23e3bf1bd37c3ab4528b12f081882 *DESCRIPTION
+949427b7cffa14285013f87ed6d460d2 *DESCRIPTION
 40ba8063f62cd76d23e83ba4660bcf55 *NAMESPACE
 846ce6eabedefcede4ed78f276fcbc90 *R/method.R
 3d6d88d016a5f29f5a25448274662f14 *R/nutriNetwork.R
-1a1f968b26d9d5cc54ff04e4a99ce5e8 *R/selectnet.R
+ee9da0cf243cc375f535c50df91ceb7d *R/selectnet.R
 dd5b9e8b58dd19993c8f70dfc9507b1f *data/vfit.RData
-323302daa2caa8326852e4390b04dba9 *man/nutriNetwork-internal.Rd
+0a852b630dd1d8bc0f37f31c9b8b23d2 *man/nutriNetwork-internal.Rd
 e8ca9c711bb9c1c43ebf925ac07cf68b *man/nutriNetwork-package.Rd
 40b545ede1e4933ca2001d49bf6c4a75 *man/nutriNetwork.Rd
 ddef49d7da5ee012ff7085377c2c1450 *man/plot.nutriNetwork.Rd

@@ -1,4 +1,6 @@
 \name{nutriNetwork-internal}
+\alias{nutriNetwork-internal}
+
 \title{nutriNetwork-internal}
 
 \description{

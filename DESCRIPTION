@@ -1,7 +1,7 @@
 Package: nutriNetwork
 Type: Package
 Title: Structure Learning with Copula Graphical Model
-Version: 0.1.1
+Version: 0.1.2
 Author: Pariya Behrouzi <https://orcid.org/0000-0001-6762-5433> 
 Maintainer: Pariya Behrouzi <pariya.behrouzi@gmail.com>
 Depends: R (>= 3.1.0)
@@ -10,8 +10,8 @@ Description: Statistical tool for learning the structure of direct associations 
 			 continuous data, discrete data and mixed discrete-continuous data. The package is based
 			 on the copula graphical model in Behrouzi and Wit (2017) <doi:10.1111/rssc.12287>. 
 License: GPL-3
-Date: 2019-04-23
+Date: 2023-07-05
 NeedsCompilation: no
-Packaged: 2019-04-26 08:35:09 UTC; behro001
+Packaged: 2023-07-05 15:31:15 UTC; behro001
 Repository: CRAN
-Date/Publication: 2019-04-26 10:00:02 UTC
+Date/Publication: 2023-07-05 15:50:02 UTC
